@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         portfolioItem.setAttribute('data-category', project.category);
         
         portfolioItem.innerHTML = `
-            <img src="https://github.com/belqisk/works.github.io/blob/main/path/to/3d-design-image.jpg" alt="${project.title}">
+            <img src="https://raw.githubusercontent.com/belqisk/works.github.io/refs/heads/main/path/to/3d-design-image.jpg" alt="${project.title}">
             <div class="portfolio-item-info">
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             galleryItem.className = 'gallery-item';
             
             const img = document.createElement('img');
-            img.src = "https://github.com/belqisk/works.github.io/blob/main/path/to/3d-design-image.jpg";
+            img.src = "https://raw.githubusercontent.com/belqisk/works.github.io/refs/heads/main/path/to/3d-design-image.jpg";
             img.alt = `${project.title} - Image ${i}`;
             
             const description = document.createElement('p');
