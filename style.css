@@ -163,7 +163,7 @@ nav ul li a:hover {
     right: 0;
     background: linear-gradient(to top, rgba(151, 137, 122, 0.9), rgba(151, 137, 122, 0.7));
     color: #FFFFFF;
-    padding: 20px;
+    padding: 15px;
     transform: translateY(80%); /* 修改这里，使标签完全隐藏 */
     transition: transform 0.3s ease;
 }
@@ -173,14 +173,14 @@ nav ul li a:hover {
 }
 
 .portfolio-item-info h3 {
-    margin: 0 0 15px;
+    margin: 0 0 10px;
     font-size: 18px;
     font-weight: 600;
     color: #FFFFFF;
 }
 
 .portfolio-item-info p {
-    margin: 0 0 15px;
+    margin: 0 0 10px;
     font-size: 13px;
     opacity: 0.95;
 }
@@ -900,7 +900,7 @@ footer {
 /* Professional Skills 样式调整 */
 @media screen and (max-width: 360px) {
     .skills-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3fr);
         gap: 10px;
     }
 
