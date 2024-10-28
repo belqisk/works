@@ -680,7 +680,7 @@ footer {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
@@ -719,7 +719,7 @@ footer {
 
 @media screen and (max-width: 768px) {
     .skills-container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 3fr;
     }
 }
 
