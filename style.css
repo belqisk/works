@@ -222,7 +222,7 @@ nav ul li a:hover {
     background: var(--accent-color);
     padding: 20px;  /* 减少内边距 */
     border-radius: 8px;
-    margin-top: 30px;  /* 减少顶部边距 */
+    margin-top: 20px;  /* 减少顶部边距 */
     text-align: center;
 }
 
@@ -357,7 +357,7 @@ footer {
     word-break: break-word;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1680px) {
     .contact-item {
         width: calc(50% - 7.5px);  /* 在小屏幕上每行2个项目，调整间距 */
     }
