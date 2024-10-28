@@ -4,7 +4,7 @@
     --accent-color: #F5F2EF; /* 强调色 */
     --text-color: #333333; /* 文字颜色 */
     --background-color: #FFFFFF; /* 背景色 */
-    --highlight-color: #6B5B95; /* 高亮色 */
+    --highlight-color: #735F49; /* 高亮色 */
 }
 
 body {
@@ -212,12 +212,12 @@ nav ul li a:hover {
 }
 
 .view-project:hover {
-    background: var(--secondary-color);
+    background: var(--accent-color);
     color: var(--background-color);
 }
 
 #contact {
-    background: var(--accent-color);
+    background: var(--highlight-color);
     padding: 20px;  /* 减少内边距 */
     border-radius: 8px;
     margin-top: 20px;  /* 减少顶部边距 */
