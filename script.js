@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         { category: 'graphic', title: 'Brand Identity Project', description: 'A comprehensive brand identity design for a tech startup, including logo, color palette, and brand guidelines.', date: '2023' },
         { category: '3d', title: 'Product Visualization', description: '3D rendering and animation of a new smartphone model, showcasing its features and design from various angles.', date: '2023' },
-        { category: 'ui', title: 'Mobile App UI', description: 'User interface design for a fitness tracking mobile application, focusing on intuitive navigation and clean aesthetics.', date: '2023' },
+        { category: 'ui', title: 'No. 79 perfume brand', description: 'NO. 79 brand Turkey perfumes cater to Asian scent preferences, with "Desert" emerging as the top choice.', date: '2022' },
         { category: 'graphic', title: 'Event Poster Series', description: 'A series of eye-catching posters designed for a music festival, each representing different genres and artists.', date: '2022' },
         { category: '3d', title: '3D Character Design', description: 'Creation of a detailed 3D character for an animated short film, including modeling, texturing, and rigging.', date: '2023' },
         { category: 'ui', title: 'E-commerce Website Redesign', description: 'Complete overhaul of an e-commerce website UI, focusing on improving user experience and conversion rates.', date: '2022' },
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             galleryItem.className = 'gallery-item';
             
             const img = document.createElement('img');
-            img.src = "path/to/3d-design-image.jpg";
+            img.src = "path/to/79 2.png";
             img.alt = `${project.title} - Image ${i}`;
             
             const description = document.createElement('p');
