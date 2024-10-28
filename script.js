@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const portfolioGrid = document.getElementById('portfolio-grid');
     const showAllBtn = document.getElementById('show-all-btn');
 
-  // 作品数据 (30个项目)
+    // 作品数据 (30个项目)
     const projects = [
         { category: 'graphic', title: 'Brand Identity Project', description: 'A comprehensive brand identity design for a tech startup, including logo, color palette, and brand guidelines.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
         { category: '3d', title: 'Product Visualization', description: '3D rendering and animation of a new smartphone model, showcasing its features and design from various angles.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { category: '3d', title: 'Product Packaging', description: '3D design of product packaging for a new line of organic skincare products.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
         { category: 'ui', title: 'Website Landing Page', description: 'Designed a landing page for a marketing campaign, optimizing for conversions.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
         { category: 'graphic', title: 'Infographic Design', description: 'Created an infographic to visually represent data for a research project.', date: '2022', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: '3d', title: '3D Animation', description: 'Produced a 3D animation for a promotional video, showcasing product features.', date: '2023', image: 'path/to/another-graphic-design-image.jpgg' },
+        { category: '3d', title: '3D Animation', description: 'Produced a 3D animation for a promotional video, showcasing product features.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
         { category: 'ui', title: 'Mobile Game UI', description: 'Designed the user interface for a mobile game, focusing on user engagement and aesthetics.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
         { category: 'graphic', title: 'Event Branding', description: 'Developed branding materials for a large-scale event, including banners and signage.', date: '2022', image: 'path/to/another-graphic-design-image.jpg' },
         { category: '3d', title: 'Virtual Reality Experience', description: 'Designed a virtual reality experience for an educational program, enhancing learning through immersion.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
@@ -33,21 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
         { category: '3d', title: '3D Visualization for Architecture', description: 'Produced 3D visualizations for architectural projects, helping clients visualize designs.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
         { category: 'ui', title: 'E-commerce Mobile App', description: 'Designed the UI for an e-commerce mobile app, focusing on user experience and conversion rates.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
         { category: 'graphic', title: 'Promotional Materials', description: 'Designed promotional materials for a local event, including flyers and posters.', date: '2022', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: '3d', title: '3D Animation for Marketing', description: 'Created a 3D animation for a marketing campaign, showcasing product features and benefits.', date: '2023', image: 'path/to/another-graphic-design-image.jpgg' },
+        { category: '3d', title: '3D Animation for Marketing', description: 'Created a 3D animation for a marketing campaign, showcasing product features and benefits.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
     ];
 
     let currentIndex = 0;
-    const initialItemsToShow = 6;
-
-    const modal = document.getElementById('project-modal');
-    const closeModal = document.getElementsByClassName('close-modal')[0];
-
-    // Experience模态框相关
-    const experienceBtn = document.getElementById('experience-btn');
-    const experienceModal = document.getElementById('experience-modal');
-    const closeExperienceModal = experienceModal.querySelector('.close-modal');
-
-let currentIndex = 0;
     const initialItemsToShow = 6;
 
     const modal = document.getElementById('project-modal');
@@ -99,7 +88,7 @@ let currentIndex = 0;
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         `;
         
-        // 清空并填充图片画廊
+        // ���空并填充图片画廊
         const galleryContainer = document.getElementById('modal-gallery');
         galleryContainer.innerHTML = '';
         for (let i = 1; i <= 4; i++) {
@@ -118,7 +107,7 @@ let currentIndex = 0;
             galleryContainer.appendChild(galleryItem);
         }
 
-         // 填充详情
+        // 填充详情
         document.getElementById('modal-details').innerHTML = `
             <p><strong>Category:</strong> ${project.category.charAt(0).toUpperCase() + project.category.slice(1)} Design</p>
             <p><strong>Date:</strong> ${project.date}</p>
@@ -140,7 +129,7 @@ let currentIndex = 0;
     }
 
     // 加载更多作品
-    function loadMoreProjects(count, filter = 'ui') {
+    function loadMoreProjects(count, filter = 'all') {
         const filteredProjects = projects.filter(project => filter === 'all' || project.category === filter);
         const endIndex = Math.min(currentIndex + count, filteredProjects.length);
         for (let i = currentIndex; i < endIndex; i++) {
@@ -177,6 +166,7 @@ let currentIndex = 0;
         const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
         loadMoreProjects(projects.length - currentIndex, activeFilter);
     });
+
 
     // 筛选功能
     filterButtons.forEach(button => {
