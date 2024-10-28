@@ -326,8 +326,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;  /* 减少项目之间的间距 */
-    margin-top: 15px;  /* 减少顶部边距 */
+    gap: 5px;  /* 减少项目之间的间距 */
+    margin-top: 5px;  /* 减少顶部边距 */
 }
 
 .contact-item {
@@ -337,8 +337,8 @@ footer {
     color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
-    width: calc(33.33% - 10px);  /* 调整宽度和间距 */
-    margin-bottom: 15px;  /* 减少底部边距 */
+    width: calc(10% - 10px);  /* 调整宽度和间距 */
+    margin-bottom: 5px;  /* 减少底部边距 */
 }
 
 .contact-item:hover {
@@ -359,7 +359,7 @@ footer {
 
 @media screen and (max-width: 1680px) {
     .contact-item {
-        width: calc(50% - 7.5px);  /* 在小屏幕上每行2个项目，调整间距 */
+        width: calc(10% - 7.5px);  /* 在小屏幕上每行2个项目，调整间距 */
     }
 
     .contact-item i {
