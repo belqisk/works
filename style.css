@@ -166,7 +166,7 @@ nav ul li a:hover {
     background: linear-gradient(to top, rgba(151, 137, 122, 0.9), rgba(151, 137, 122, 0.7));
     color: #FFFFFF;
     padding: 20px;
-    transform: translateY(100%); /* 修改这里，使标签完全隐藏 */
+    transform: translateY(80%); /* 修改这里，使标签完全隐藏 */
     transition: transform 0.3s ease;
 }
 
@@ -179,7 +179,7 @@ nav ul li a:hover {
     font-size: 18px;
     font-weight: 600;
     color: #FFFFFF;
-    text-shadow: none; /* 移除文字阴影 */
+    text-shadow: none; 
 }
 
 .portfolio-item-info p {
