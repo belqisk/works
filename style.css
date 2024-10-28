@@ -898,7 +898,7 @@ footer {
 }
 
 /* Professional Skills 样式调整 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 360px) {
     .skills-container {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
