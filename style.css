@@ -689,8 +689,8 @@ footer {
 .skill-category {
     background-color: var(--background-color);
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
 }
 
@@ -700,7 +700,7 @@ footer {
 
 .skill-category h3 {
     color: var(--primary-color);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 18px;
     text-align: center;
 }
@@ -901,7 +901,7 @@ footer {
 /* Professional Skills 样式调整 */
 @media screen and (max-width: 360px) {
     .skills-container {
-        grid-template-columns: repeat(3fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
 
@@ -921,7 +921,7 @@ footer {
 /* 更小屏幕的调整 */
 @media screen and (max-width: 480px) {
     .portfolio-grid {
-        grid-template-columns: 2fr; /* 在非常小的屏幕上改回单列 */
+        grid-template-columns: repeat(3, 1fr); /* 在非常小的屏幕上改回单列 */
     }
     
 }
