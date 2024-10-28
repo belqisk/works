@@ -165,7 +165,7 @@ nav ul li a:hover {
     background: linear-gradient(to top, rgba(151, 137, 122, 0.9), rgba(151, 137, 122, 0.7));
     color: #FFFFFF;
     padding: 15px;
-    transform: translateY(75%); /* 修改这里，使标签完全隐藏 */
+    transform: translateY(95%); /* 修改这里，使标签完全隐藏 */
     transition: transform 0.3s ease;
 }
 
