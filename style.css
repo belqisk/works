@@ -667,31 +667,35 @@ footer {
     }
 }
 
+
 #skills {
     padding: 40px 0;
     background-color: #f9f9f9;
 }
 
 #skills h2 {
-    color: var(--primary-color);
+    color: #97897A; /* 保持标题颜色 */
     text-align: center;
     margin-bottom: 30px;
 }
 
 .skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+    display: flex; /* 使用flex布局 */
+    flex-wrap: wrap; /* 允许换行 */
+    justify-content: center; /* 居中对齐 */
+    gap: 15px; /* 标签之间的间距 */
+    max-width: 1000px; /* 限制最大宽度 */
+    margin: 0 auto; /* 居中 */
 }
 
 .skill-category {
-    background-color: var(--background-color);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    padding: 10px; /* 减少内边距 */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
+    flex: 1 1 150px; /* 设置标签的基础宽度 */
+    min-width: 120px; /* 设置最小宽度 */
 }
 
 .skill-category:hover {
@@ -699,9 +703,9 @@ footer {
 }
 
 .skill-category h3 {
-    color: var(--primary-color);
-    margin-bottom: 20px;
-    font-size: 18px;
+    color: #97897A;
+    margin-bottom: 10px;
+    font-size: 16px; /* 缩小标题字体 */
     text-align: center;
 }
 
@@ -711,21 +715,20 @@ footer {
 }
 
 .skill-category li {
-    margin-bottom: 10px;
-    font-size: 14px;
+    margin-bottom: 5px; /* 减少标签之间的间距 */
+    font-size: 12px; /* 缩小字体 */
     text-align: center;
     color: #666;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 360px) {
     .skills-container {
-        grid-template-columns: 3fr;
+        flex-direction: column; /* 在小屏幕上改为垂直排列 */
+        align-items: center; /* 居中对齐 */
     }
-}
 
-@media screen and (max-width: 480px) {
-    .skills-container {
-        grid-template-columns: 1fr;
+    .skill-category {
+        width: 100%; /* 在小屏幕上占满宽度 */
     }
 }
 
