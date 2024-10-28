@@ -4,7 +4,7 @@
     --accent-color: #F5F2EF; /* 强调色 */
     --text-color: #333333; /* 文字颜色 */
     --background-color: #FFFFFF; /* 背景色 */
-    --highlight-color: #6B5B95; /* 高亮色（原蓝色替换） */
+    --highlight-color: #6B5B95; /* 高亮色 */
 }
 
 body {
