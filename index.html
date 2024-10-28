@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEFEI LI / BELQIS - Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>KEFEI LI / BELQIS</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="path/to/your-photo.jpg" alt="KEFEI LI / BELQIS" class="profile-photo">
+                <div class="about-text-container">
+                    <div class="about-text">
+                        <p>Hello! I'm KEFEI LI, also known as BELQIS. I'm a passionate designer with expertise in graphic design, 3D modeling, and UI/UX design. With a keen eye for detail and a love for creative problem-solving, I strive to create visually stunning and functional designs that leave a lasting impression.</p>
+                        <p>My journey in design has equipped me with a diverse skill set, including proficiency in Adobe Creative Suite, 3D modeling software, and various UI design tools. I believe in the power of design to communicate, inspire, and transform ideas into reality.</p>
+                        <p>When I'm not designing, you can find me exploring new art exhibitions, experimenting with photography, or learning about the latest trends in technology and design.</p>
+                    </div>
+                    <div id="experience-section">
+                        <button id="experience-btn" class="experience-btn">Professional Experience</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-nav">
+                <button class="filter-btn" data-filter="ui">UI Design</button>
+                <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+                <button class="filter-btn" data-filter="3d">3D Design</button>
+                <button class="filter-btn" data-filter="all">All</button>
+            </div>
+            <div id="portfolio-grid" class="portfolio-grid">
+                <!-- Portfolio items will be dynamically inserted here -->
+            </div>
+            <div class="show-more-container">
+                <button id="show-all-btn" class="show-all-btn">Show All Projects</button>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Professional Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Design</h3>
+                    <ul>
+                        <li>UI/UX Design</li>
+                        <li>Graphic Design</li>
+                        <li>3D Modeling</li>
+                        <li>Motion Graphics</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Adobe Creative Suite</li>
+                        <li>Figma & Sketch</li>
+                        <li>Blender & Maya</li>
+                        <li>Cinema 4D</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Web</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Other</h3>
+                    <ul>
+                        <li>Project Management</li>
+                        <li>Team Leadership</li>
+                        <li>Client Communication</li>
+                        <li>Agile Methodology</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <a href="https://www.instagram.com/your_instagram" target="_blank" class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <span>@your_instagram</span>
+                </a>
+                <a href="https://www.linkedin.com/in/your_linkedin" target="_blank" class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>linkedin.com/in/your_linkedin</span>
+                </a>
+                <a href="tel:+1234567890" class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+1 (234) 567-890</span>
+                </a>
+                <a href="mailto:your.email@example.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>your.email@example.com</span>
+                </a>
+                <a href="https://wa.me/1234567890" target="_blank" class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>+1 (234) 567-890</span>
+                </a>
+                <a href="#" class="contact-item" id="wechat-icon">
+                    <i class="fab fa-weixin"></i>
+                    <span>YourWeChatID</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 KEFEI LI / BELQIS. All rights reserved.</p>
+    </footer>
+
+    <!-- 更新弹窗结构 -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="modal-description"></div>
+            <div id="modal-gallery" class="modal-gallery"></div>
+            <div id="modal-details"></div>
+        </div>
+    </div>
+
+    <!-- 在文件末尾添加新的模态框 -->
+    <div id="experience-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-date">2020 - Present</div>
+                    <div class="experience-details">
+                        <h3>Senior UI/UX Designer</h3>
+                        <p class="company">Tech Innovations Inc.</p>
+                        <p>Led the redesign of the company's flagship product, collaborated with cross-functional teams, and mentored junior designers.</p>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-date">2017 - 2020</div>
+                    <div class="experience-details">
+                        <h3>Graphic Designer</h3>
+                        <p class="company">Creative Solutions Agency</p>
+                        <p>Created visual identities, designed marketing materials, and ensured brand consistency across all platforms.</p>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-date">2016 - 2017</div>
+                    <div class="experience-details">
+                        <h3>3D Modeling Intern</h3>
+                        <p class="company">Animation Studios Ltd.</p>
+                        <p>Assisted in creating 3D models and environments for animated short films, applying various modeling techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
