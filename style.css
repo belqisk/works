@@ -217,7 +217,7 @@ nav ul li a:hover {
 }
 
 #contact {
-    background: #F5F2EF;
+    background: var(--accent-color);
     padding: 10px;  /* 减少内边距 */
     border-radius: 8px;
     margin-top: 30px;  /* 减少顶部边距 */
