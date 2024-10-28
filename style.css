@@ -217,10 +217,10 @@ nav ul li a:hover {
 }
 
 #contact {
-    background: var( --secondary-color);
-    padding: 20px;  /* 减少内边距 */
+    background: #B0A69A;
+    padding: 10px;  /* 减少内边距 */
     border-radius: 8px;
-    margin-top: 20px;  /* 减少顶部边距 */
+    margin-top: 30px;  /* 减少顶部边距 */
     text-align: center;
 }
 
