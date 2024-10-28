@@ -920,11 +920,8 @@ footer {
 /* 更小屏幕的调整 */
 @media screen and (max-width: 480px) {
     .portfolio-grid {
-        grid-template-columns: 1fr; /* 在非常小的屏幕上改回单列 */
+        grid-template-columns: 2fr; /* 在非常小的屏幕上改回单列 */
     }
-
-    .skills-container {
-        grid-template-columns: 1fr; /* 在非常小的屏幕上改回单列 */
-    }
+    
 }
 
