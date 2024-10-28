@@ -173,11 +173,10 @@ nav ul li a:hover {
 }
 
 .portfolio-item-info h3 {
-    margin: 0 0 10px;
+    margin: 0 0 15px;
     font-size: 18px;
     font-weight: 600;
     color: #FFFFFF;
-    text-shadow: none; 
 }
 
 .portfolio-item-info p {
