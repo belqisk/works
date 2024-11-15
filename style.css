@@ -438,8 +438,8 @@ footer {
     }
 
     .profile-photo {
-        width: 200px;
-        height: 280px;
+        width: 100px;
+        height: 160px;
         margin-bottom: 10px;
     }
 
@@ -701,8 +701,8 @@ footer {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
-    flex: 1 1 150px; /* 设置标签的基础宽度 */
-    min-width: 120px; /* 设置最小宽度 */
+    flex: 1 1 80px; /* 设置标签的基础宽度 */
+    min-width: 60px; /* 设置最小宽度 */
 }
 
 .skill-category:hover {
