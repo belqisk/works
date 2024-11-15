@@ -388,8 +388,8 @@ footer {
 }
 
 .profile-photo {
-    width: 200px;
-    height: 300px;
+    width: 150px;
+    height: 220px;
     object-fit: cover;
     border-radius: 50% / 40%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
