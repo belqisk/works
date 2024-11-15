@@ -5,35 +5,186 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 作品数据 (30个项目)
     const projects = [
-        { category: 'graphic', title: 'Brand Identity Project', description: 'A comprehensive brand identity design for a tech startup, including logo, color palette, and brand guidelines.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: '3d', title: 'Product Visualization', description: '3D rendering and animation of a new smartphone model, showcasing its features and design from various angles.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: 'ui', title: 'SMOO Vape Website UI and UX Design', description: 'The SMOO Vape website combines an intuitive, visually appealing design with seamless navigation and user-friendly features, ensuring a smooth, efficient experience across all devices.', date: '2024', image: 'path/to/Frame 11.png' },
-        { category: 'graphic', title: 'Event Poster Series', description: 'A series of eye-catching posters designed for a music festival, each representing different genres and artists.', date: '2022', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: '3d', title: '3D Character Design', description: 'Creation of a detailed 3D character for an animated short film, including modeling, texturing, and rigging.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: 'ui', title: 'E-commerce Website Redesign', description: 'Complete overhaul of an e-commerce website UI, focusing on improving user experience and conversion rates.', date: '2022', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: 'graphic', title: 'Social Media Campaign', description: 'Designed a series of graphics for a social media campaign that increased engagement by 50%.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: '3d', title: 'Architectural Visualization', description: '3D visualization of a modern architectural design, showcasing interior and exterior views.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: 'ui', title: 'ConnectNow AI Service UI/UX Design', description: 'It aims to integrate multiple communication channels into one unified platform while leveraging the power of AI to enhance service delivery. ', date: '2024', image: 'path/to/modern-laptop-with-blank-white-screen-isolated-black-background-close-up copy.jpg' },
-        { category: 'graphic', title: 'Brochure Design', description: 'Designed a tri-fold brochure for a local business, highlighting their services and offerings.', date: '2022', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: '3d', title: 'Product Packaging', description: '3D design of product packaging for a new line of organic skincare products.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: 'ui', title: 'SQRL-X NFT Web UI/UX Design', description: 'The design ensures users have an enjoyable, intuitive, and visually striking experience while interacting with the SQRL-X NFT collection, building excitement and trust in the community.', date: '2024', image: 'path/to/1231.png' },
-        { category: 'graphic', title: 'Infographic Design', description: 'Created an infographic to visually represent data for a research project.', date: '2022', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: '3d', title: '3D Animation', description: 'Produced a 3D animation for a promotional video, showcasing product features.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: 'ui', title: '"Ask Confucius" AI Q&A Website UI/UX Design', description: 'Delivering an interactive, intuitive, and engaging experience for users seeking wisdom and answers from Confucius digital representation. ', date: '2024', image: 'path/to/16_9.png' },
-        { category: 'graphic', title: 'Event Branding', description: 'Developed branding materials for a large-scale event, including banners and signage.', date: '2022', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: '3d', title: 'Virtual Reality Experience', description: 'Designed a virtual reality experience for an educational program, enhancing learning through immersion.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: 'ui', title: 'E-learning Platform', description: 'UI design for an e-learning platform, focusing on user-friendly navigation and accessibility.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: 'graphic', title: 'Packaging Design', description: 'Designed packaging for a new beverage product, emphasizing sustainability and aesthetics.', date: '2022', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: '3d', title: '3D Product Model', description: 'Created a detailed 3D model of a consumer electronics product for marketing purposes.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: 'ui', title: 'Fitness App UI', description: 'Designed the user interface for a fitness tracking app, focusing on user engagement and functionality.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: 'graphic', title: 'Corporate Identity', description: 'Developed a complete corporate identity package for a startup, including logo, business cards, and letterhead.', date: '2022', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: '3d', title: '3D Game Asset', description: 'Created 3D assets for a video game, including characters and environments.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: 'ui', title: 'Travel App UI', description: 'Designed the user interface for a travel planning app, focusing on ease of use and visual appeal.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: 'graphic', title: 'Social Media Graphics', description: 'Created a series of graphics for social media campaigns, increasing engagement and reach.', date: '2022', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: '3d', title: '3D Visualization for Architecture', description: 'Produced 3D visualizations for architectural projects, helping clients visualize designs.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: 'ui', title: 'E-commerce Mobile App', description: 'Designed the UI for an e-commerce mobile app, focusing on user experience and conversion rates.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: 'graphic', title: 'Promotional Materials', description: 'Designed promotional materials for a local event, including flyers and posters.', date: '2022', image: 'path/to/another-graphic-design-image.jpg' },
-        { category: '3d', title: '3D Animation for Marketing', description: 'Created a 3D animation for a marketing campaign, showcasing product features and benefits.', date: '2023', image: 'path/to/another-graphic-design-image.jpg' },
+        { category: 'graphic', 
+          title: 'BGA toys Brand Identity Project', 
+          description: 'A comprehensive brand identity design for a tech startup, including logo, color palette, and brand guidelines.', 
+          date: '2023', 
+          image1: 'path/to/poster1.jpg',
+          image2: 'path/to/Frame 1142814620.png',
+          image3: 'path/to/Frame 1142814616.png',
+          image4: 'path/to/Frame 1142814617.png',
+          image5: 'path/to/Frame 1142814618.png'
+        },
+        { category: '3d', 
+          title: 'Nestlé x Li-Ning Pop-up Store', 
+          description: 'At the pop-up, customers can discover exclusive Nestlé products that complement an active lifestyle, alongside Li-Ning is latest athletic gear and apparel designed for peak performance. With its vibrant atmosphere and interactive experiences, this pop-up store invites consumers to engage with both brands in an exciting new way, making it the perfect destination for fitness enthusiasts and brand fans alike.',
+          date: '2021', 
+          image1: 'path/to/Frame 1142814670.png',
+          image2: 'path/to/Frame 1142814671.png',
+          image3: 'path/to/Frame 1142814672.png',
+          image4: 'path/to/Frame 1142814673.png',
+          image5: 'path/to/Frame 1142814674.png'
+        },
+        { category: 'ui', 
+          title: 'SMOO Vape Website UI and UX Design', 
+          description: 'The SMOO Vape website combines an intuitive, visually appealing design with seamless navigation and user-friendly features, ensuring a smooth, efficient experience across all devices.', 
+          date: '2024', 
+          image1: 'path/to/Frame 11.png', 
+          image2: 'path/to/Frame 13.png', 
+          image3: 'path/to/Frame 14.png', 
+          image4: 'path/to/Frame 15.png', 
+          image5: 'path/to/Frame 16.png'
+        },
+        { category: 'graphic', 
+          title: '"Natural Selection" Essential Oil Packaging Design', 
+          description: 'The "Natural Selection" Essential Oil line is crafted with care to harness the purest essence of nature. The packaging design reflects our commitment to nature, with eco-friendly materials and minimalist aesthetics that emphasize simplicity and purity.', 
+          date: '2022', 
+          image1: 'path/to/Frame 1142814621.png',
+          image2: 'path/to/Frame 1142814625.png', 
+          image3: 'path/to/Frame 1142814622.png', 
+          image4: 'path/to/Frame 1142814624.png', 
+          image5: 'path/to/Frame 1142814623.png' 
+        },
+        { category: 'ui', 
+          title: 'LungiTea APP', 
+          description: 'Introducing Lungi Tea, an app crafted for tea enthusiasts who seek to embrace tea as an integral part of their daily lives. Delve into a world of tea by exploring recipes for sipping, brewing, cooking, and creating tea-infused desserts.', 
+          date: '2023', 
+          image1: 'path/to/8e27e5175563959.64b6c2357f57d.jpg', 
+          image2: 'path/to/LungiTea - tea recipe app design_1731642191516.jpeg', 
+          image3: 'path/to/LungiTea - tea recipe app design_1731642199340.jpeg', 
+          image4: 'path/to/LungiTea - tea recipe app design_1731642196514.jpeg', 
+          image5: 'path/to/8e27e5175563959.64b6c2357f57d.jpg', 
+        },
+        { category: 'graphic', 
+          title: 'Baklava Packaging Box', 
+          description: 'The Baklava Packaging Box is designed to showcase the richness and elegance of this beloved Middle Eastern dessert. With its intricate patterns inspired by traditional motifs and golden accents, the box reflects the luxurious taste of the baklava inside. Made with high-quality, food-safe materials, the box keeps the baklava fresh and protected, ensuring that every bite is as crisp and flavorful as when it was first made.', 
+          date: '2023', 
+          image1: 'path/to/Frame 1142814628.png', 
+          image2: 'path/to/Frame 1142814626.png', 
+          image3: 'path/to/Frame 1142814627.png', 
+          image4: 'path/to/Frame 1142814629.png', 
+          image5: 'path/to/Frame 1142814630.png', 
+        },
+        { category: 'ui', 
+          title: 'ConnectNow AI Service UI/UX Design', 
+          description: 'It aims to integrate multiple communication channels into one unified platform while leveraging the power of AI to enhance service delivery. ', 
+          date: '2024', 
+          image1: 'path/to/modern-laptop-with-blank-white-screen-isolated-black-background-close-up copy.jpg',
+          image2: 'path/to/Frame 1142814598.png', 
+          image3: 'path/to/Frame 1142814599.png', 
+          image4: 'path/to/Frame 1142814601.png', 
+          image5: 'path/to/Frame 22.png'
+        },
+        { category: 'graphic', 
+          title: 'Turkish Black Tea Packaging', 
+          description: 'The Turkish Black Tea Packaging is designed to capture the essence of Turkey is rich tea culture. The elegant yet practical design ensures the tea stays fresh, preserving its full-bodied flavor and distinct aroma. Crafted with premium materials, the packaging not only maintains the quality of the tea leaves but also provides an inviting aesthetic that makes it perfect for gifting or enjoying at home. ', 
+          date: '2022', 
+          image1: 'path/to/Frame 1142814632.png', 
+          image2: 'path/to/Frame 1142814633.png', 
+          image3: 'path/to/Frame 1142814631.png', 
+          image4: 'path/to/Frame 1142814635.png', 
+          image5: 'path/to/Frame 1142814634.png'
+        },
+        { category: 'ui', 
+          title: 'SQRL-X NFT Web UI/UX Design',
+          description: 'The design ensures users have an enjoyable, intuitive, and visually striking experience while interacting with the SQRL-X NFT collection, building excitement and trust in the community.', 
+          date: '2024', 
+          image1: 'path/to/1231.png',
+          image2: 'path/to/Frame 1142814602.png', 
+          image3: 'path/to/Frame 1142814603.png', 
+          image4: 'path/to/Frame 1142814604.png', 
+          image5: 'path/to/Frame 1142814605.png' 
+        },
+        { category: 'graphic', 
+          title: 'Perfume Packaging Design', 
+          description: 'The Perfume Packaging is designed to embody the essence of luxury and elegance, capturing the unique identity of the fragrance within. With sleek lines and an exquisite combination of colors, textures, and materials, the packaging creates an emotional connection even before the scent is experienced. Each detail, from the shape of the bottle to the typography on the label, is carefully crafted to reflect the personality of the perfume—whether it is bold and sophisticated, fresh and floral, or warm and sensual.',
+          date: '2022', 
+          image1: 'path/to/Frame 1142814636.png',
+          image2: 'path/to/Frame 1142814637.png', 
+          image3: 'path/to/Frame 1142814638.png', 
+          image4: 'path/to/Frame 1142814639.png', 
+          image5: 'path/to/Frame 1142814640.png' 
+        },
+        { category: 'ui', 
+          title: '"Ask Confucius" AI Q&A Website UI/UX Design', 
+          description: 'Delivering an interactive, intuitive, and engaging experience for users seeking wisdom and answers from Confucius digital representation. ', 
+          date: '2024', 
+          image1: 'path/to/16_9.png',
+          image2: 'path/to/Frame 1142814606.png', 
+          image3: 'path/to/Frame 1142814607.png', 
+          image4: 'path/to/Frame 1142814608.png', 
+          image5: 'path/to/Frame 1142814609.png'  
+        },
+        { category: 'graphic', 
+          title: '79º Perfume Packaging', 
+          description: 'The 79º Perfume Packaging is inspired by the sophisticated elegance of nature’s raw beauty. The design embodies a balance of simplicity and refinement, with a minimalistic bottle that features clean lines and a frosted finish, evoking a sense of purity and freshness. ', 
+          date: '2022', 
+          image1: 'path/to/Frame 1142814642.png',
+          image2: 'path/to/Frame 1142814642.png', 
+          image3: 'path/to/Frame 1142814641.png', 
+          image4: 'path/to/Frame 1142814644.png', 
+          image5: 'path/to/Frame 1142814645.png' 
+        },
+        { category: 'ui', 
+          title: 'Smart Home App', 
+          description: 'The Smart Home App is designed to give you complete control over your home is connected devices, all from the convenience of your smartphone or tablet. With an intuitive interface, you can easily manage lighting, security cameras, thermostats, and more, creating a comfortable and secure living environment. Customize scenes to adjust settings with a single tap or set schedules that automate tasks, like turning off lights when you leave or adjusting the temperature before you get home.', 
+          date: '2023', 
+          image1: 'path/to/Frame 1142814614.png',
+          image2: 'path/to/Frame 1142814611.png', 
+          image3: 'path/to/Frame 1142814613.png', 
+          image4: 'path/to/Frame 1142814612.png', 
+          image5: 'path/to/Frame 1142814615.png'
+        },
+        { category: 'graphic', 
+          title: 'Land Rover "Unstoppable Discovery" Test Drive', 
+          description: 'The "Unstoppable Discovery" Test Drive by Land Rover China is an immersive driving experience designed to showcase the exceptional capabilities of Land Rover vehicles. Participants are invited to journey through diverse terrains, from rugged mountain trails to serene countryside roads, experiencing firsthand the power, versatility, and luxury that define Land Rover.',
+          date: '2019', 
+          image1: 'path/to/Frame 1142814646.png',
+          image2: 'path/to/Frame 1142814647.png', 
+          image3: 'path/to/Frame 1142814648.png', 
+          image4: 'path/to/Frame 1142814649.png', 
+          image5: 'path/to/Frame 1142814650.png'
+        },
+        { category: 'graphic', 
+          title: 'Land Rover ATRS Experience Camp', 
+          description: 'The Land Rover ATRS (All-Terrain Response System) Experience Camp is a dynamic event crafted to allow participants to explore the full potential of Land Rover is advanced all-terrain technology. Participants will experience firsthand how Land Rover is ATRS adapts to a variety of surfaces—whether it is gravel, sand, mud, or snow—ensuring a smooth and confident drive in any environment. The camp offers a blend of thrilling off-road adventures, practical learning sessions, and the chance to push the limits of capability in a safe and controlled setting. With Land Rover is experienced instructors by your side, the ATRS Experience Camp empowers you to master the toughest driving challenges and gain a deeper appreciation for the remarkable engineering behind every Land Rover.', 
+          date: '2019', 
+          image1: 'path/to/Frame 1142814651.png',
+          image2: 'path/to/Frame 1142814652.png', 
+          image3: 'path/to/Frame 1142814653.png', 
+          image4: 'path/to/Frame 1142814651.png', 
+          image5: 'path/to/Frame 1142814654.png'
+        },
+        { category: 'graphic', 
+          title: 'Land Rover ATRS Experience Camp', 
+          description: 'The Land Rover ATRS (All-Terrain Response System) Experience Camp is a dynamic event crafted to allow participants to explore the full potential of Land Rover is advanced all-terrain technology. Participants will experience firsthand how Land Rover is ATRS adapts to a variety of surfaces—whether it is gravel, sand, mud, or snow—ensuring a smooth and confident drive in any environment. The camp offers a blend of thrilling off-road adventures, practical learning sessions, and the chance to push the limits of capability in a safe and controlled setting. ', 
+          date: '2019', 
+          image1: 'path/to/Frame 1142814655.png',
+          image2: 'path/to/Frame 1142814656.png', 
+          image3: 'path/to/Frame 1142814657.png', 
+          image4: 'path/to/Frame 1142814658.png', 
+          image5: 'path/to/Frame 1142814659.png'
+        },
+        { category: 'graphic', 
+          title: 'Chevrolet Orlando', 
+          description: 'The Chevrolet Orlando Test Drive offers a hands-on experience of the dynamic performance and versatility of this compact MPV. You will discover that Orlando has impressive handling, advanced safety features, and efficient fuel economy.', 
+          date: '2019', 
+          image1: 'path/to/Frame 1142814660.png',
+          image2: 'path/to/Frame 1142814661.png', 
+          image3: 'path/to/Frame 1142814662.png', 
+          image4: 'path/to/Frame 1142814663.png', 
+          image5: 'path/to/Frame 1142814664.png'
+        },
+        { category: '3d', 
+          title: 'Chevrolet "Feel the Thrill" Experience Event', 
+          description: 'Feel the thrill of driving a Chevrolet like never before—unleash the power, style, and excitement that define the brand at the Chevrolet "Feel the Thrill" Experience Event.', 
+          date: '2019', 
+          image1: 'path/to/Frame 1142814665.png',
+          image2: 'path/to/Frame 1142814666.png', 
+          image3: 'path/to/Frame 1142814667.png', 
+          image4: 'path/to/Frame 1142814668.png', 
+          image5: 'path/to/Frame 1142814669.png'
+        },
     ];
 
     let currentIndex = 0;
@@ -54,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
         portfolioItem.setAttribute('data-category', project.category);
         
         portfolioItem.innerHTML = `
-            <img src="${project.image}" alt="${project.title}">
+            <img src="${project.image1}" alt="${project.title}">
             <div class="portfolio-item-info">
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>
@@ -85,34 +236,41 @@ document.addEventListener('DOMContentLoaded', () => {
         // 填充描述
         document.getElementById('modal-description').innerHTML = `
             <p>${project.description}</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p></p>
         `;
         
-        // ���空并填充图片画廊
-        const galleryContainer = document.getElementById('modal-gallery');
-        galleryContainer.innerHTML = '';
-        for (let i = 1; i <= 4; i++) {
-            const galleryItem = document.createElement('div');
-            galleryItem.className = 'gallery-item';
-            
-            const img = document.createElement('img');
-            img.src = project.image;
-            img.alt = `${project.title} - Image ${i}`;
-            
-            const description = document.createElement('p');
-            description.textContent = `This is a detailed description for image ${i}. It explains the specific aspects of the design, the challenges faced, and the solutions implemented.`;
-            
-            galleryItem.appendChild(img);
-            galleryItem.appendChild(description);
-            galleryContainer.appendChild(galleryItem);
-        }
+// 填充图片画廊
+const galleryContainer = document.getElementById('modal-gallery');
+galleryContainer.innerHTML = '';
+
+// 假设项目对象有 image1, image2, image3, image4, image5 这四个属性
+const images = [project.image1, project.image2, project.image3, project.image4, project.image5];
+const descriptions = [
+    `This is detailed view of the final products, showcasing important features.`,
+];
+
+for (let i = 0; i < images.length; i++) {
+    const galleryItem = document.createElement('div');
+    galleryItem.className = 'gallery-item';
+
+    const img = document.createElement('img');
+    img.src = images[i];
+    img.alt = `${project.title} - Image ${i + 1}`;
+
+    const description = document.createElement('p');
+    description.textContent = descriptions[i];
+
+    galleryItem.appendChild(img);
+    galleryItem.appendChild(description);
+    galleryContainer.appendChild(galleryItem);
+}
+
 
         // 填充详情
         document.getElementById('modal-details').innerHTML = `
             <p><strong>Category:</strong> ${project.category.charAt(0).toUpperCase() + project.category.slice(1)} Design</p>
             <p><strong>Date:</strong> ${project.date}</p>
-            <p><strong>Client:</strong> Example Client</p>
-            <p><strong>Tools:</strong> Adobe Photoshop, Illustrator, Sketch</p>
+            <p><strong>Tools:</strong> Adobe Photoshop, Illustrator, Figma, Cinema 4D</p>
         `;
 
         modal.style.display = 'block';
