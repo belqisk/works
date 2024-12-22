@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
           title: 'GleamDental-lab | Brand Identity | Dental Beauty', 
           description: 'GleamDental-lab is a leading dental laboratory specializing in high-quality, innovative dental solutions. With a focus on precision and craftsmanship, we ensure each restoration is perfectly crafted using the latest technology. Our goal is to restore both function and beauty, enhancing every smile. ', 
           date: '2024', 
-          image1: 'path/to/Group 1142814699_5_11zon.webp',
-          image2: 'path/to/Group 1142814700_4_11zon.webp', 
+          image1: 'path/to/Group 1142814699_1_11zon.webp',
+          image2: 'path/to/Group 1142814700_2_11zon.webp', 
           image3: 'path/to/Group 1142814701_3_11zon.webp', 
           image4: 'path/to/Group 1142814702_2_11zon.webp', 
           image5: 'path/to/Group 1142814703_1_11zon.webp' 
