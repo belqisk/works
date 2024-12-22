@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     let currentIndex = 0;
-    const initialItemsToShow = 34;
+    const initialItemsToShow = 6;
 
     const modal = document.getElementById('project-modal');
     const closeModal = document.getElementsByClassName('close-modal')[0];
