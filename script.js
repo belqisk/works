@@ -15,6 +15,16 @@ document.addEventListener('DOMContentLoaded', () => {
           image4: 'path/to/Frame 1142814617.webp',
           image5: 'path/to/Frame 1142814618.webp'
         },
+        { category: 'ui', 
+          title: 'GleamDental-lab | Brand Identity | Dental Beauty', 
+          description: 'GleamDental-lab is a leading dental laboratory specializing in high-quality, innovative dental solutions. With a focus on precision and craftsmanship, we ensure each restoration is perfectly crafted using the latest technology. Our goal is to restore both function and beauty, enhancing every smile. ', 
+          date: '2024', 
+          image1: 'path/to/Group 1142814699_5_11zon.webp',
+          image2: 'path/to/Group 1142814699_4_11zon.webp', 
+          image3: 'path/to/Group 1142814699_3_11zon.webp', 
+          image4: 'path/to/Group 1142814699_2_11zon.webp', 
+          image5: 'path/to/Group 1142814699_1_11zon.webp' 
+        },
         { category: '3d', 
           title: 'Nestlé x Li-Ning Pop-up Store', 
           description: 'At the pop-up, customers can discover exclusive Nestlé products that complement an active lifestyle, alongside Li-Ning is latest athletic gear and apparel designed for peak performance. With its vibrant atmosphere and interactive experiences, this pop-up store invites consumers to engage with both brands in an exciting new way, making it the perfect destination for fitness enthusiasts and brand fans alike.',
